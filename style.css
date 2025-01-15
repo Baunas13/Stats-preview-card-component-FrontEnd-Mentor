@@ -9,11 +9,8 @@
     --main-paragraph-color: #ffffffbf;
     --stat-headings: #ffffff99;
 
-}
+    --body-font-size: 1.5rem;
 
-html {
-    font-size: 62.5%;
-    font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -21,10 +18,83 @@ html {
     margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-size: var(--body-font-size);
+
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: var(--card-bg-color);
+    display: flex;
+    min-width: 900px;
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+.main-content {
+    max-width: 60%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content-title {
+    color: var(--main-heading-color);
+    letter-spacing: 1.3px;
+    margin-bottom: 2.4rem;
+}
+
+.main-content-paragraph {
+    color: var(--main-paragraph-color);
+    flex-grow: 1;
+}
+
+.main-content-marker {
+    color: var(--accent-color);
+}
+
+.section-stats {}
+
+.stats {
+    display: flex;
+    color: var(--stat-headings);
+    list-style-type: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.stats-marker {
+    display: block;
+    color: var(--main-heading-color);
+    font-family: "Lexend Deca" Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.image {
+    border-radius: 0 10px 10px 0;
+
+}
+
 
 
 .attribution {
-    font-size: 11px;
+    font-size: 1.1rem;
     text-align: center;
 }
 
